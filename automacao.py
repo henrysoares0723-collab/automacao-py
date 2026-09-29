@@ -9,6 +9,8 @@
 
 import pyautogui
 
+pyautogui.PAUSE = 1
+
 pyautogui.press('Win')
 pyautogui.write('Chrome')
 pyautogui.press('Enter')
