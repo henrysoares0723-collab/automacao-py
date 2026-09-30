@@ -1,14 +1,7 @@
-#Logica do codigo 
-
-#1 - Entrar no sistema da empresa
-#2 - Fazer login 
-#3 - Abrir a base de dados 
-#4 - Cadastrar um produto 
-#5 - Repetir a etapa 4 ate acabar a lista de produtos 
-
 
 import pyautogui
 import time 
+import pandas as pd 
 
 pyautogui.PAUSE = 0.5
 link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
@@ -27,3 +20,8 @@ pyautogui.press('Tab')
 pyautogui.write('Henry2007')
 pyautogui.press('Tab')
 pyautogui.press('Enter')
+
+time.sleep(4)
+
+tabela = pd.read_csv('produtos.csv')
+print(tabela)
