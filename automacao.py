@@ -9,8 +9,12 @@
 
 import pyautogui
 
-pyautogui.PAUSE = 1
-
+pyautogui.PAUSE = 0.5
+link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
 pyautogui.press('Win')
 pyautogui.write('Chrome')
 pyautogui.press('Enter')
+
+pyautogui.write(link)
+pyautogui.press('Enter')
+
