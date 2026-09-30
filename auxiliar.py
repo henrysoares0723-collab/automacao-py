@@ -6,7 +6,8 @@ print(pyautogui.position())
 
 
 #  codigo       marca        tipo  categoria  preco_unitario  custo               obs
-#0    MOLO000251    Logitech       Mouse          1           25.95    6.5               NaN
+#0    MOLO000251    Logitech       Mouse          MOMU000111    Multilaser  Mouse   Mouse   1           25.95    6.5               25.0   11.0    Conferir estoque    
+
 #1    MOLO000192    Logitech       Mouse          2           19.95    5.0               NaN
 #2    CAHA000251     Hashtag      Camisa          1           25.00   11.0               NaN
 #3    CAHA000252     Hashtag      Camisa          2           25.00   11.0  Conferir estoque

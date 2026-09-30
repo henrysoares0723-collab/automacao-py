@@ -26,26 +26,40 @@ time.sleep(4)
 tabela = pd.read_csv('produtos.csv')
 print(tabela)
 
-pyautogui.click(x=821, y=258)
-pyautogui.write('MOLO000251')
-pyautogui.press('Tab')
-pyautogui.write('Logitech')
-pyautogui.press('Tab')
-pyautogui.write('Mouse')
+for linha in tabela.index:
+    pyautogui.click(x=821, y=258)
 
-pyautogui.press('Tab')
-pyautogui.write('Acessorios')
+    codigo = str(tabela.loc[linha, 'codigo'])
+    pyautogui.write(codigo)
+    pyautogui.press('Tab')
 
-pyautogui.press('Tab')
-pyautogui.write(' 1 ')
+    marca = tabela.loc[linha, 'marca']
+    pyautogui.write(marca)
+    pyautogui.press('Tab')
 
-pyautogui.press('Tab')
-pyautogui.write('25.95')
-pyautogui.press('Tab')
 
-pyautogui.write('NaN')
-pyautogui.press('Tab')
+    tipo = str(tabela.loc[linha, 'tipo']) 
+    pyautogui.write(tipo)
+    pyautogui.press('Tab')
 
-pyautogui.press('Enter')
+    categoria = str(tabela.loc[linha, 'categoria'])
+    pyautogui.write(categoria)
+    pyautogui.press('Tab')
+
+    preco = str(tabela.loc[linha, 'preco_unitario'])
+    pyautogui.write(preco)
+    pyautogui.press('Tab')
+
+    custo = str(tabela.loc[linha, 'custo'])
+    pyautogui.write(custo)
+    pyautogui.press('Tab')
+
+    obs = str(tabela.loc[linha, 'obs'])
+    if obs != 'NaN':
+        pyautogui.write(obs)
+    pyautogui.press('Tab')
+
+    pyautogui.press('Enter')
+    pyautogui.scroll(5000)
 
 
