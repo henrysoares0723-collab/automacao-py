@@ -25,3 +25,27 @@ time.sleep(4)
 
 tabela = pd.read_csv('produtos.csv')
 print(tabela)
+
+pyautogui.click(x=821, y=258)
+pyautogui.write('MOLO000251')
+pyautogui.press('Tab')
+pyautogui.write('Logitech')
+pyautogui.press('Tab')
+pyautogui.write('Mouse')
+
+pyautogui.press('Tab')
+pyautogui.write('Acessorios')
+
+pyautogui.press('Tab')
+pyautogui.write(' 1 ')
+
+pyautogui.press('Tab')
+pyautogui.write('25.95')
+pyautogui.press('Tab')
+
+pyautogui.write('NaN')
+pyautogui.press('Tab')
+
+pyautogui.press('Enter')
+
+
